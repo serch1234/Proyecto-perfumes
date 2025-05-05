@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Roboto+Slab:wght@300&display=swap');
+@media (max-width: 768px) {
+    .container_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box__footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito',sans-serif;
+    text-decoration: none;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px; /* Añade espacio arriba del footer *//
+    
+    
+   
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.box__footer{
+    
+    flex: 1 1 200px; /* Ajusta el ancho mínimo según necesites */
+    margin: 10px;
+    text-align: center;
+    
+}
+.redes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.box__footer .logo img{
+    width: 200px;
+}
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 10px;
+    font-weight: 500;
+    color:#0E8784;
+    font-size: 18px;
+    
+}
+
+.box__footer  h2{
+ 
+    margin-bottom: 30px;
+    color:#ffffff;
+    font-weight: 700;
+    
+}
+
+.box__footer a{
+    margin-top: 8px;
+    color:#ffffff;
+    font-weight: 600;
+    
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+.box__footer a .fab{
+    font-size: 20px;
+    
+}
+
+.box__copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.box__copyright p{
+    margin-top: 20px;
+    color:#ffffff;
+}
+.box__copyright hr{
+    height: 1px;
+    background-color:#ffffff;
+}
+ .box__footer{
+     font-size: 30px;
+
+ }
+ .box__footer .bi{
+    color: #ffffff;
+ }
+
+ /* Estilos generales del footer */
+.container_footer {
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Estilo para cada caja del footer */
+.box__footer {
+    flex: 1; /* Cada caja ocupa el mismo espacio */
+    margin: 10px; /* Margen entre cajas */
+}
+
+/* Estilo para el logo */
+.logo img {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+/* Estilo para los enlaces */
+.box__footer h2 {
+    font-size: 1.2em; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+}
+
+.box__footer a {
+    text-decoration: none; /* Sin subrayado */
+    color: #007bff; /* Color del enlace */
+}
+
+.box__footer a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilo para los íconos de redes sociales */
+.redes {
+    display: flex; /* Flexbox para alinear íconos */
+    gap: 10px; /* Espacio entre íconos */
+}
+
+/* Estilo para el copyright */
+.box__copyright {
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado arriba */
+    border-top: 1px solid #dee2e6; /* Línea superior */
+    padding-top: 10px; /* Espaciado superior */
+}

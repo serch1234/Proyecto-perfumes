@@ -1,0 +1,251 @@
+@import "compass/css3";
+
+* { box-sizing: border-box; }
+
+body {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  color:white;
+  font-size:12px;
+  background-image: url('../images/fondo\ gris.jpg');
+            background-size: 100% 100%;
+
+}
+
+form{
+  background:#3a3a44; 
+  width:300px;
+  margin:30px auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+form:after {
+  content:"";
+  display:block;
+  position:absolute;
+  height:1px;
+  width:100px;
+  left:20%;
+  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+  top:0;
+}
+
+form:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:8px;
+  height:5px;
+  border-radius:50%;
+  left:34%;
+  top:-7px;
+  box-shadow: 0 0 6px 4px #fff;
+}
+
+.inset {
+  padding:20px; 
+  border-top:1px solid #19191a;
+}
+
+form h1 {
+  font-size:28px;
+  text-shadow:0 1px 0 black;
+  text-align:center;
+  padding:15px 0;
+  border-bottom:1px solid rgba(0,0,0,1);
+  position:relative;
+}
+
+form h1:after {
+  content:"";
+      display:block;
+  width:250px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:50px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+  
+}
+
+label {
+  color:  #eee7e7;
+  display:block;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:11px;
+}
+
+input[type=text],
+input[type=password] {
+ 	width:100%;
+  padding:8px 5px;
+  background:linear-gradient(#1f2124, #27292c);
+  border:1px solid #222;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1);
+  border-radius:0.5em;
+  
+  color: #f5f3f7;
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+label[for=remember]{
+  color:white;
+  display:inline-block;
+  padding-bottom:0;
+  padding-top:5px;
+}
+
+input[type=checkbox] {
+ 	display:inline-block;
+    font-size:15px;
+    vertical-align:top;
+}
+
+.p-container {
+ 	padding:0 20px 20px 20px; 
+}
+
+.p-container:after {
+ 	clear:both;
+  display:table;
+  content:"";
+}
+
+.p-container span {
+  display:block;
+  float:left;
+  color:#0d93ff;
+  padding-top:8px;
+}
+
+input[type=submit] {
+ 	padding:5px 20px;
+  border:1px solid rgba(0,0,0,0.4);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 10px 10px rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  background:#101217;
+  color:white;
+  float:right;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:18px;
+}
+
+input[type=submit]:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+
+input[type=button] {
+  padding:5px 20px;
+ border:1px solid rgba(0,0,0,0.4);
+ text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+ box-shadow:
+   inset 0 1px 0 rgba(255,255,255,0.3),
+   inset 0 10px 10px rgba(255,255,255,0.1);
+ border-radius:0.3em;
+ background:#101217;
+ color:white;
+ float:right;
+ font-weight:bold;
+ cursor:pointer;
+ font-size:18px;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+label:hover ~ input[type=text],
+label:hover ~ input[type=password] {
+ 	background:#27292c;
+}
+
+a {
+  color:#f1eff3;
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  margin: 0;
+}
+
+.container {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
+  padding: 20px; /* Espaciado interno */
+  width: 300px; /* Ancho del formulario */
+}
+
+h1 {
+  text-align: center; /* Centrar el título */
+  color: #444; /* Color del texto */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espaciado inferior entre los grupos de formulario */
+}
+
+label {
+  display: block; /* Hacer que las etiquetas ocupen toda la línea */
+  margin-bottom: 5px; /* Espaciado inferior de las etiquetas */
+  color: #555; /* Color de las etiquetas */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Ancho completo del campo */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados para los campos de entrada */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.btn {
+  width: 100%; /* Ancho completo del botón */
+  padding: 10px; /* Espaciado interno */
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.options {
+  text-align: center; /* Centrar el texto de las opciones */
+  margin-top: 15px; /* Espaciado superior */
+}
+
+.forgot-password,
+.register {
+  color: #007BFF; /* Color azul para los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.forgot-password:hover,
+.register:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
