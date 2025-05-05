@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nosotros</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="sesiontools">
+			<a class="navbar-brand" href="index.php">
+				<img src="./images/iconperfu.jpg" width="50" height="50" class="d-inline-block align-top" alt="perfumelogo">
+				The Aroma Serg
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.php">Inicio <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="./contact.html" onclick="showLoading('./contact.html')">Contacto</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Productos
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="./pages/products.html">hombres</a>
+							<a class="dropdown-item" href="./pages/products.html">mujeres</a>
+						</div>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="./about.html">Nosotros</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="modificacionesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Accesibilidad
+						</a>
+						<div class="dropdown-menu" aria-labelledby="modificacionesDropdown">
+							<a class="dropdown-item" href="#" id="increase-font">Aumentar Tamaño de Letra</a>
+							<a class="dropdown-item" href="#" id="decrease-font">Disminuir Tamaño de Letra</a>
+							<a class="dropdown-item" href="#" id="toggle-contrast">Alternar Contraste</a>
+							<a class="dropdown-item" href="#" id="toggle-brightness">Ajustar Brillo</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="favoritos.php">
+							<i class="fas fa-heart"></i> Favoritos
+						</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<ul class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i id="icono" class="bi bi-person-circle"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="sesion_clientes.php">Inicia sesión</a>
+							<a class="dropdown-item" href="formu_clientes.php">Registro</a>
+						</div>
+					</ul>
+					<a href="#" class="nav-link" id="btnCarrito" onclick="showCart()">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="badge bg-success" id="carrito">0</span>
+					</a>
+				</form>
+			</div>
+		</nav><!-- navbar responsiva -->
+
+	<header class="">
+		<div class="container px-4 px-lg">
+		   <div class="text-center text-white">
+		   <img  width="1190" height="230"  src="./nosotros.jpeg">
+
+		</div>
+	</div>
+</header>
+	
+	<div id="fh5co-about">
+		<div class="container">
+			<div class="about-content">
+				<div class="row animate-box">
+					<div class="col-md-6">
+						<div class="desc">
+							<h3>Quienes Somos</h3>
+							<p>En The Aroma Serg ,
+
+								Nos especializamos en una amplia selección de perfumes exclusivos y productos aromáticos de alta calidad, cuidadosamente elegidos para despertar tus sentidos. Nuestro equipo de expertos en perfumería está aquí para ayudarte a encontrar la esencia perfecta que refleja tu estilo y personalidad.</p>
+						</div>
+						<div class="desc">
+							<h3>Mision &amp; Vision</h3>
+							<p>Nuestra misión Ser la opción preferida de todas las personas que buscan expresar su esencia a través de fragancias únicas. Nos comprometemos a ofrecer productos de calidad excepcional, un servicio al cliente personalizado y un entorno en el que cada aroma cuente una historia especial.</p> 
+							<p>Nuestra visión Inspirar y conectar a personas de todas las edades y culturas mediante el poder transformador de las fragancias. Queremos ser un referente en el mundo de la perfumería, promoviendo la creatividad, la expresión personal y el bienestar a través de aromas que evoquen emociones y recuerdos inolvidables.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" src="images/perfu.jpg" alt="about">
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Equipo Productivo</span>
+					<h2>Nuestro equipo</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/PERFILSERGIO.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3>Sergio Perez</h3>
+						<strong class="role">Director</strong>
+						<p>Director principal de Perfumeria The aroma serg </p>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/ALEXIS.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3>Alexis Rodriguez</h3>
+						<strong class="role">Gerente General</strong>
+						<p>Experto en fragancias.</p>
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/person3.jpeg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3></h3>
+						<strong class="role">Supervisor</strong>
+						<p></p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contact info">
+		<h3>Informacion de Contacto</h3>
+		<div class="infoBox">
+			<div>
+				<span><ion-icon name="location"></ion-icon></span>
+				<p>Av Telecomunicaciones, Chinam Pac de Juárez, <br> Iztapalapa, 09208 <br> Ciudad de México, CDMX</p>
+			</div>
+			<div>
+				<span><ion-icon name="mail"></ion-icon></span>
+				<a href="mailto:uriel@gmail.com">perezvelascosergioantonio@gmail.com</a>
+			</div>
+			<div>
+				<span><ion-icon name="call"></ion-icon></span>
+				<a href="tel:+55 523123654">+52 5618146371</a>
+			</div>
+
+			<ul class="csi">
+				<li><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="contact map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15054.968564966239!2d-99.0529122!3d19.3803148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd0614558e4b%3A0x3760847a107a0b9f!2sTecNM%20%7C%20Tecnol%C3%B3gico%20Nacional%20de%20M%C3%A9xico%20Campus%20Iztapalapa!5e0!3m2!1ses!2smx!4v1717643691393!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+  </div>
+</div>
+
+<script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/39joioxi3k5pf80kkre4jx93t3ubu7gu.js" async></script>
+
+
+<footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Todos los derechos reservados &copy; equipo Pweb 2024</p>
+        </div>
+    </footer>
+   	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

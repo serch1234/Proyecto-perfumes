@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar con PayPal</title>
+</head>
+<body>
+    <h1>Comprar Producto</h1>
+    <p>Producto 1 - Precio: $10 USD</p>
+
+    <!-- Botón de PayPal -->
+    <div id="paypal-button-container"></div>
+
+    <!-- SDK de PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AYgVRFV0aNVaT8FiWnIa_ZgMhg2rHxu40s4jt8E5P-twTqkM_KlKK60sq-7vI166gnZzVOlyRT1Kbk_h"></script>
+
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                // Configurar el pedido
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '10.00' // Monto en dólares
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                // Capturar el pago
+                return actions.order.capture().then(function(details) {
+                    alert('Pago completado por ' + details.payer.name.given_name);
+                });
+            }
+        }).render('#paypal-button-container'); // Renderizar el botón de PayPal
+    </script>
+</body>
+</html>
